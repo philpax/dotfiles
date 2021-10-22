@@ -33,3 +33,4 @@ wget
 nushell
 emacs
 ripgrep
+fd
