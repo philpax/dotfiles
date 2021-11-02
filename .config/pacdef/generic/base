@@ -34,3 +34,7 @@ nushell
 emacs
 ripgrep
 fd
+polkit
+alsa-utils
+p7zip
+clang

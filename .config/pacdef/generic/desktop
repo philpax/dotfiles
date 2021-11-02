@@ -1,4 +1,5 @@
 mesa
+mesa-demos
 sway
 swayidle
 dmenu
@@ -9,3 +10,4 @@ xdg-utils
 parsec-bin
 gimp
 grim
+polkit-gnome
