@@ -1,1 +1,4 @@
 path = ["/usr/local/sbin", "/usr/local/bin", "/usr/bin", "~/.emacs.d/bin"]
+
+[env]
+SSH_AUTH_SOCK = "/tmp/ssh-agent.socket"
