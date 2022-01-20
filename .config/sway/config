@@ -13,7 +13,7 @@ gaps outer 0
 title_align center
 titlebar_padding 6
 
-font pango:Iosevka 11
+font pango:Iosevka 14
 
 set $cl_high #4b1458b0
 set $cl_indi #d9d8ddff
@@ -28,9 +28,9 @@ client.focused_inactive $cl_back $cl_back $cl_fore $cl_back $cl_back
 client.unfocused        $cl_back $cl_back $cl_fore $cl_back $cl_back
 client.urgent           $cl_urge $cl_urge $cl_fore $cl_urge $cl_urge
 
-output * bg ~/.config/wallpapers/promare-blurred.jpg fill
 output HDMI-A-1 mode 2560x1440@74.780Hz
-output eDP-2 mode 2560x1440@165.003Hz
+output eDP-1 mode 2560x1440@165.003Hz
+exec_always ~/.config/wallpapers/update.sh
 
 exec swayidle -w \
          timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
@@ -175,25 +175,29 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    position top
-    height 32
-    gaps 8
+    swaybar_command waybar
+    # position top
+    # height 32
+    # gaps 8
 
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %H:%M:%S    '; do sleep 1; done
+    # # When the status_command prints a new line to stdout, swaybar updates.
+    # # The default just shows the current date and time.
+    # status_command while date +'%Y-%m-%d %H:%M:%S    '; do sleep 1; done
 
-    colors {
-        statusline $cl_fore
-        # background #323232
-        background #00000090
-        # Colors                border   bg       text     
-        focused_workspace $cl_high $cl_high $cl_fore 
-        active_workspace $cl_back $cl_back $cl_fore 
-        inactive_workspace $cl_back $cl_back $cl_fore 
-        urgent_workspace $cl_urge $cl_urge $cl_fore 
-    }
+    # colors {
+    #     statusline $cl_fore
+    #     # background #323232
+    #     background #00000090
+    #     # Colors                border   bg       text     
+    #     focused_workspace $cl_high $cl_high $cl_fore 
+    #     active_workspace $cl_back $cl_back $cl_fore 
+    #     inactive_workspace $cl_back $cl_back $cl_fore 
+    #     urgent_workspace $cl_urge $cl_urge $cl_fore 
+    # }
 
-    workspace_min_width 64
+    # workspace_min_width 64
 }
 
+input "2362:597:UNIW0001:00_093A:0255_Touchpad" {
+	natural_scroll enabled
+}

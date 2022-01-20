@@ -3,6 +3,7 @@ mesa-demos
 sway
 swayidle
 dmenu
+waybar
 alacritty
 firefox
 xorg-xwayland
@@ -10,7 +11,13 @@ xdg-utils
 parsec-bin
 gimp
 grim
+slurp
 polkit-gnome
 google-chrome
 spotify
-wdisplays
+thunar
+gvfs
+gvfs-mtp
+discord
+python-gobject
+nm-connection-editor
