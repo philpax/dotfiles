@@ -44,3 +44,12 @@ screen
 efibootmgr
 groff
 os-prober
+python
+python-pip
+wpa_supplicant
+pulseaudio
+pulseaudio-alsa
+pavucontrol
+meson
+ninja
+flatbuffers
