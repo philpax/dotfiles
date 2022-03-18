@@ -1,5 +1,6 @@
 amd-ucode
 lutris
+nvidia
 nvidia-dkms
 nvidia-utils
 lib32-nvidia-utils
@@ -56,3 +57,4 @@ cpupower
 bbswitch
 vulkan-tools
 ntfs-3g
+vulkan-radeon
