@@ -54,3 +54,11 @@ meson
 ninja
 flatbuffers
 scc
+jq
+nodejs-lts-fermium
+npm
+yarn
+kotlin
+gradle
+glfw-wayland
+llvm

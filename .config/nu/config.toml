@@ -1,7 +1,0 @@
-path = ["/usr/local/sbin", "/usr/local/bin", "/usr/bin", "~/.emacs.d/bin"]
-
-[line_editor]
-max_history_size = 100000
-
-[env]
-SSH_AUTH_SOCK = "/tmp/ssh-agent.socket"
