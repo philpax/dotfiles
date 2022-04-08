@@ -6,7 +6,7 @@ set $down j
 set $up k
 set $right l
 set $term alacritty
-set $menu rofi -show run
+set $menu wofi -S run
 
 gaps inner 8
 gaps outer 0
@@ -38,6 +38,8 @@ exec swayidle -w \
 
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec sworkstyle 
+exec env RUST_BACKTRACE=1 RUST_LOG=swayr=debug swayrd > /tmp/swayrd.log 2>&1
+
 # Start a terminal
 bindsym $mod+Return exec $term
 
@@ -46,7 +48,7 @@ bindsym $mod+Shift+q kill
 
 # Start your launcher
 bindsym $mod+d exec $menu
-bindsym $mod+space exec rofi -show window
+bindsym $mod+space exec env RUST_BACKTRACE=1 swayr switch-workspace-or-window >> /tmp/swayr.log 2>&1 
 bindsym $mod+shift+s exec grim -g "$(slurp)" - | wl-copy
 bindsym $mod+ctrl+s exec grim -g "$(slurp)" screenshots/$(date +'%s_grim.png')
 
