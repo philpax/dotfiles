@@ -16,6 +16,7 @@ polkit-gnome
 google-chrome
 spotify
 thunar
+thunar-archive-plugin
 gvfs
 gvfs-mtp
 discord
@@ -36,3 +37,7 @@ libreoffice-fresh
 ghidra
 swayr
 wofi
+vlc
+zip
+file-roller
+imhex
