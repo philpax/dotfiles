@@ -1,6 +1,7 @@
 mesa
 mesa-demos
-sway
+sway-git
+wlroots-eglstreams-git
 swayidle
 dmenu
 waybar
@@ -40,5 +41,4 @@ wofi
 vlc
 zip
 file-roller
-imhex
 ncdu

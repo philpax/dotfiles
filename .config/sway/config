@@ -11,9 +11,10 @@ set $menu wofi -S run
 gaps inner 8
 gaps outer 0
 title_align center
-titlebar_padding 6
+titlebar_padding 4
 
-font pango:Iosevka 14
+font pango:Iosevka 8
+# font pango:Iosevka 0
 
 set $cl_high #4b1458b0
 set $cl_indi #d9d8ddff
@@ -28,8 +29,11 @@ client.focused_inactive $cl_back $cl_back $cl_fore $cl_back $cl_back
 client.unfocused        $cl_back $cl_back $cl_fore $cl_back $cl_back
 client.urgent           $cl_urge $cl_urge $cl_fore $cl_urge $cl_urge
 
-output HDMI-A-1 mode 2560x1440@74.780Hz
-output eDP-1 mode 2560x1440@165.003Hz
+# output HDMI-A-1 mode 2560x1440@74.780Hz
+# output eDP-1 mode 2560x1440@165.003Hz
+output eDP-1 disable
+output HDMI-A-1 disable
+output DP-1 mode 3440x1440@144.00Hz
 exec_always ~/.config/wallpapers/update.sh
 
 exec swayidle -w \
